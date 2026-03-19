@@ -1,16 +1,56 @@
-# React + Vite
+# 🚀 Personal Portfolio – Senior Full Stack Engineer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive portfolio website showcasing my experience in building scalable backend systems, full stack applications, and production-grade software solutions.
 
-Currently, two official plugins are available:
+## 👨‍💻 About Me
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Senior Full Stack Engineer with 7+ years of experience designing and building scalable systems, APIs, and distributed architectures.
 
-## React Compiler
+I specialize in:
+- Backend engineering & microservices
+- Distributed systems & event-driven architecture
+- Full stack application development
+- AI-powered workflows and automation
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🌐 Live Demo
 
-## Expanding the ESLint configuration
+👉 https://my-portfolio-bay-ten-65.vercel.app/
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠️ Tech Stack
+
+### Frontend
+- React.js
+- Vite
+- Tailwind CSS
+- Vue.js
+- JavaScript / TypeScript
+
+### Backend & Systems
+- Python (Django, FastAPI)
+- Node.js
+- REST APIs & Microservices
+- Kafka (event-driven systems)
+
+### Databases & Caching
+- PostgreSQL / MySQL
+- Redis
+- Couchbase
+
+### DevOps & Cloud
+- Docker
+- AWS / Azure
+- CI/CD Pipelines
+- Monitoring & Logging
+
+---
+
+## ⚙️ Getting Started
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/your-username/my-portfolio.git
+cd my-portfolio
+npm run dev

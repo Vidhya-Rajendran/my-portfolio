@@ -52,6 +52,13 @@
   }
 }
 
+html,
+body,
+#root {
+  width: 100%;
+  overflow-x: hidden;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -69,6 +76,12 @@ body {
 
 a {
   text-decoration: none;
+}
+
+
+::selection {
+  background: rgba(34, 211, 238, 0.25);
+  color: white;
 }
 
 #root {

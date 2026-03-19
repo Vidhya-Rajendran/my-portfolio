@@ -4,18 +4,18 @@ import { portfolioData } from "../data/portfolioData";
 
 export default function Experience() {
   return (
-    <section className="mx-auto max-w-6xl px-6 py-16" id="experience">
+    <section className="mx-auto max-w-6xl px-4 py-14 sm:px-6 sm:py-16" id="experience">
       <div className="flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
         <div>
           <p className="text-sm uppercase tracking-[0.2em] text-cyan-300">
             Experience
           </p>
-          <h2 className="mt-2 text-3xl font-semibold text-white md:text-4xl">
+          <h2 className="mt-2 text-2xl font-semibold !text-white sm:text-3xl md:text-4xl">
             Professional journey
           </h2>
         </div>
 
-        <p className="max-w-2xl text-slate-400">
+        <p className="max-w-2xl text-sm leading-7 text-slate-400 sm:text-base">
           Roles where I’ve built scalable products, improved reliability, and
           delivered backend-heavy full stack systems with real business impact.
         </p>
@@ -40,26 +40,26 @@ export default function Experience() {
                 </div>
               </div>
 
-              <div className="overflow-hidden rounded-[28px] border border-white/10 bg-white/5 p-6 shadow-xl backdrop-blur transition hover:border-cyan-400/20 hover:bg-white/[0.07] md:p-8">
-                <div className="flex flex-col gap-5 lg:flex-row lg:items-start lg:justify-between">
+              <div className="overflow-hidden rounded-[24px] border border-white/10 bg-white/5 p-5 shadow-xl backdrop-blur transition hover:border-cyan-400/20 hover:bg-white/[0.07] sm:p-6 md:p-8">
+                <div className="flex flex-col gap-5">
                   <div>
-                    <div className="flex flex-wrap items-center gap-3">
-                        <div>
-                            <h3 className="text-2xl font-semibold text-white">
-                                {item.role}
-                            </h3>
-                        </div>
-                        <span className="rounded-full border border-cyan-400/20 bg-cyan-400/10 px-3 py-1 text-sm font-medium text-cyan-200">
-                            {item.company}
-                        </span>
-                        <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-slate-900/70 px-3 py-1 text-xs text-slate-300">
-                            <CalendarDays className="h-4 w-4 text-cyan-300" />
-                            {item.period}
-                        </div>                
-                    </div>                   
+                    <h3 className="text-xl font-semibold text-white sm:text-2xl">
+                      {item.role}
+                    </h3>
+
+                    <div className="mt-3 flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
+                      <span className="rounded-full border border-cyan-400/20 bg-cyan-400/10 px-3 py-1 text-sm font-medium text-cyan-200">
+                        {item.company}
+                      </span>
+
+                      <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-slate-900/70 px-3 py-1 text-xs text-slate-300">
+                        <CalendarDays className="h-4 w-4 text-cyan-300" />
+                        {item.period}
+                      </div>
+                    </div>
                   </div>
 
-                  <div className="rounded-2xl border border-cyan-400/20 bg-cyan-400/10 px-4 py-3 text-sm leading-7 text-cyan-50 lg:max-w-md">
+                  <div className="rounded-2xl border border-cyan-400/20 bg-cyan-400/10 px-4 py-3 text-sm leading-7 text-cyan-50">
                     <div className="mb-1 flex items-center gap-2 text-cyan-200">
                       <Sparkles className="h-4 w-4" />
                       <span className="font-medium">Role impact</span>
@@ -84,7 +84,7 @@ export default function Experience() {
                     Tools & technologies
                   </p>
 
-                  <div className="flex flex-wrap gap-3 mt-4">
+                  <div className="flex flex-wrap gap-3 mt-6">
                     {item.tech.map((tech) => (
                       <span
                         key={tech}

@@ -27,18 +27,18 @@ export default function About() {
   };
 
   return (
-    <section className="mx-auto max-w-6xl px-6 py-16" id="about">
-      <div className="grid gap-8">
-        <div className="rounded-3xl border border-white/10 bg-white/5 p-8 shadow-xl backdrop-blur">
-          <p className="text-sm uppercase tracking-[0.2em] text-cyan-300">
+    <section className="mx-auto max-w-6xl px-4 py-14 sm:px-6 sm:py-16" id="about">
+      <div className="grid gap-6 sm:gap-8">
+        <div className="rounded-3xl border border-white/10 bg-white/5 p-5 shadow-xl backdrop-blur sm:p-8">
+          <p className="text-xs uppercase tracking-[0.2em] text-cyan-300 sm:text-sm">
             About
           </p>
 
-          <h2 className="mt-3 text-3xl font-semibold !text-white">
+          <h2 className="mt-3 text-2xl font-semibold !text-white sm:text-3xl">
             Engineering that balances reliability, speed, and business value.
           </h2>
 
-          <p className="mt-5 leading-8 text-slate-300">
+          <p className="mt-5 text-sm leading-7 text-slate-300 sm:text-base sm:leading-8">
             My background spans full stack product development with strong
             backend specialization. I’ve worked on payment integrations,
             QR-based transaction flows, KYC systems, internal platforms, and
@@ -46,7 +46,7 @@ export default function About() {
             matter.
           </p>
 
-          <p className="mt-4 leading-8 text-slate-300">
+          <p className="mt-4 text-sm leading-7 text-slate-300 sm:text-base sm:leading-8">
             I’m especially effective in roles that need someone who can
             understand the complete workflow, own backend complexity,
             collaborate across the stack, and turn evolving requirements into
@@ -54,22 +54,22 @@ export default function About() {
           </p>
         </div>
 
-        <div className="rounded-3xl border border-white/10 bg-white/5 p-8 shadow-xl backdrop-blur">
-          <p className="text-sm uppercase tracking-[0.2em] text-cyan-300">
+        <div className="rounded-3xl border border-white/10 bg-white/5 p-5 shadow-xl backdrop-blur sm:p-8">
+          <p className="text-xs uppercase tracking-[0.2em] text-cyan-300 sm:text-sm">
             Core Skills
           </p>
 
-          <h2 className="mt-3 text-3xl font-semibold !text-white">
+          <h2 className="mt-3 text-2xl font-semibold !text-white sm:text-3xl">
             Technology stack
           </h2>
 
-          <p className="mt-3 max-w-3xl text-slate-400">
+          <p className="mt-3 max-w-3xl text-sm leading-7 text-slate-400 sm:text-base">
             A detailed view of my technical strengths across backend systems,
             frontend delivery, cloud infrastructure, engineering practices, and
             business-domain collaboration.
           </p>
 
-          <div className="mt-8 space-y-4">
+          <div className="mt-6 space-y-4 sm:mt-8">
             {portfolioData.skillSections.map((section) => {
               const isOpen = openSection === section.title;
               const Icon = iconMap[section.title] || Layers;
@@ -82,18 +82,18 @@ export default function About() {
                   <button
                     type="button"
                     onClick={() => toggleSection(section.title)}
-                    className="flex w-full items-start justify-between gap-4 px-5 py-5 text-left transition hover:bg-white/5"
+                    className="flex w-full items-start justify-between gap-3 px-4 py-4 text-left transition hover:bg-white/5 sm:gap-4 sm:px-5 sm:py-5"
                   >
-                    <div className="flex items-start gap-4">
-                      <div className="mt-1 rounded-2xl border border-cyan-400/20 bg-cyan-400/10 p-3 text-cyan-300">
+                    <div className="flex min-w-0 items-start gap-3 sm:gap-4">
+                      <div className="mt-1 rounded-2xl border border-cyan-400/20 bg-cyan-400/10 p-2.5 text-cyan-300 sm:p-3">
                         <Icon className="h-5 w-5" />
                       </div>
 
-                      <div>
-                        <h3 className="text-lg font-semibold text-white">
+                      <div className="min-w-0">
+                        <h3 className="text-base font-semibold text-white sm:text-lg">
                           {section.title}
                         </h3>
-                        <p className="mt-1 max-w-3xl text-sm leading-6 text-slate-400">
+                        <p className="mt-1 text-sm leading-6 text-slate-400">
                           {section.description}
                         </p>
                       </div>
@@ -114,12 +114,12 @@ export default function About() {
                     }`}
                   >
                     <div className="overflow-hidden">
-                      <div className="px-5 pb-5 pt-5">
-                        <div className="flex flex-wrap justify-center gap-3 max-w-4xl">
+                      <div className="px-4 pb-4 pt-4 sm:px-5 sm:pb-5 sm:pt-5">
+                        <div className="flex max-w-4xl flex-wrap justify-center gap-2 sm:gap-3">
                           {section.items.map((skill) => (
                             <span
                               key={skill}
-                              className="rounded-full border border-cyan-400/20 bg-cyan-400/10 px-4 py-2 text-sm text-cyan-100 transition hover:border-cyan-300/30 hover:bg-cyan-400/15"
+                              className="rounded-full border border-cyan-400/20 bg-cyan-400/10 px-3 py-2 text-xs text-cyan-100 transition hover:border-cyan-300/30 hover:bg-cyan-400/15 sm:px-4 sm:text-sm"
                             >
                               {skill}
                             </span>
