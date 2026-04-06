@@ -3,7 +3,7 @@ export const portfolioData = {
   title: "Senior Full Stack Developer",
   subtitle: "Python • React • Scalable Systems",
   intro:
-    "Senior Full Stack Engineer with 7+ years of experience delivering scalable fintech, payments, and AI-driven platforms. Specialized in microservices, distributed systems, and secure APIs using Python, Django, FastAPI, Node.js, React.js, Vue.js, and Golang. Proven track record of improving performance, reducing failures, and building reliable systems through cloud-native and event-driven architecture. End-to-end owner who translates complex business and AI requirements into production-ready solutions while driving engineering excellence.",
+    "Senior Full Stack Engineer with 7+ years of experience delivering scalable fintech, payments, AI-driven, and IoT-based real-time platforms. Specialized in microservices, distributed systems, and secure APIs using Python, Django, FastAPI, Node.js, React.js, Vue.js, and Golang, with hands-on experience in MQTT, WebSockets, and real-time data pipelines. Proven track record of improving performance, reducing failures, and building reliable systems through cloud-native and event-driven architecture. End-to-end owner who translates complex business and AI requirements into production-ready solutions while driving engineering excellence.",
   email: "vidhyarajendran2210@gmail.com",
   linkedin: "https://www.linkedin.com/in/vidhya-rajendran",
   github: "https://github.com/vidhya-rajendran",
@@ -183,36 +183,59 @@ export const portfolioData = {
 
   experience: [
     {
-        role: "Senior Full Stack Engineer",
-        company: "Finclutech LTD FZO",
-        period: "2025 – Present",
-        highlight:
-        "Driving backend architecture and AI-enabled workflows for transaction-heavy systems with a strong focus on scalability, reliability, and integration quality.",
-        achievements: [
-        "Architected microservices and APIs for payment and business-critical workflows using Python, Django, and async service patterns.",
-        "Designed event-driven processing with Kafka and retries to improve resilience and reduce transaction failures under load.",
-        "Built AI-powered KYC automation workflows using LLM APIs for document validation and structured data extraction.",
-        "Improved observability and debugging through logging, monitoring, and backend traceability across distributed services.",
-        ],
-        tech: ["Python", "Django", "FastAPI", "Kafka", "Redis", "React.js", "Typescript", "MySQL", "Couchbase", "LLM APIs"],
+      role: "Full Stack Engineer (Freelance)",
+      company: "Independent Project",
+      period: "Mar 2026 – Present",
+      highlight:
+        "Built an end-to-end IoT-driven real-time monitoring platform enabling automated alerts, live dashboards, and scalable event-driven processing for smart facility management.",
+      achievements: [
+        "Designed and developed a real-time IoT system integrating sensors via MQTT to track occupancy and consumable levels with event-driven architecture.",
+        "Built backend services using Python (Django) and WebSockets to process live sensor data and enable real-time communication across distributed components.",
+        "Developed a React-based dashboard with live updates and notification system (Firebase + MQTT) for monitoring multiple washroom units.",
+        "Implemented automated alerting workflows and deployed the system using Docker and Redis, ensuring scalable and production-ready performance.",
+      ],
+      tech: ["Python", "Django", "React.js", "MQTT", "WebSockets", "Redis", "Docker", "Firebase"],
     },
     {
-        role: "Full Stack Developer",
-        company: "MySyara Auto Care",
-        period: "2021 – 2025",
-        highlight:
-        "Delivered customer-facing and internal platforms across subscriptions, engagement, and operational workflows with full stack ownership.",
-        achievements: [
-        "Built and scaled web applications using React, Vue.js, Django, and REST APIs for business and customer workflows.",
-        "Integrated payment gateways and third-party services with robust validation, retry handling, and operational stability.",
-        "Optimized backend workflows and database interactions to improve efficiency and maintainability.",
-        "Worked closely with product and business teams to ship features aligned with user needs and operational goals.",
-        ],
-        tech: ["React.js", "Vue.js", "Python", "Django", "Node.js", "PostgreSQL", "MongoDB"],
+      role: "Senior Full Stack Engineer",
+      company: "Finclutech LTD FZO",
+      period: "Mar 2025 – Feb 2026",
+      highlight:
+      "Driving backend architecture and AI-enabled workflows for transaction-heavy systems with a strong focus on scalability, reliability, and integration quality.",
+      achievements: [
+      "Architected microservices and APIs for payment and business-critical workflows using Python, Django, and async service patterns.",
+      "Designed event-driven processing with Kafka and retries to improve resilience and reduce transaction failures under load.",
+      "Built AI-powered KYC automation workflows using LLM APIs for document validation and structured data extraction.",
+      "Improved observability and debugging through logging, monitoring, and backend traceability across distributed services.",
+      ],
+      tech: ["Python", "Django", "FastAPI", "Kafka", "Redis", "React.js", "Typescript", "MySQL", "Couchbase", "LLM APIs"],
+    },
+    {
+      role: "Full Stack Developer",
+      company: "MySyara Auto Care",
+      period: "Jun 2021 – Feb 2025",
+      highlight:
+      "Delivered customer-facing and internal platforms across subscriptions, engagement, and operational workflows with full stack ownership.",
+      achievements: [
+      "Built and scaled web applications using React, Vue.js, Django, and REST APIs for business and customer workflows.",
+      "Integrated payment gateways and third-party services with robust validation, retry handling, and operational stability.",
+      "Optimized backend workflows and database interactions to improve efficiency and maintainability.",
+      "Worked closely with product and business teams to ship features aligned with user needs and operational goals.",
+      ],
+      tech: ["React.js", "Vue.js", "Python", "Django", "Node.js", "PostgreSQL", "MongoDB"],
     },
   ],
 
   projects: [
+    {
+      title: "Smart Washroom Monitoring System (Smart WR)",
+      impact:
+        "Enabled real-time monitoring of washroom occupancy and consumables with automated alerts, reducing manual checks and improving operational efficiency.",
+      description:
+        "Designed and built an end-to-end IoT-based platform integrating sensors via MQTT with a Django backend and WebSocket-based real-time communication. Developed a React dashboard for live tracking, notifications, and multi-location monitoring using event-driven architecture.",
+      stack: ["Django", "React", "MQTT", "WebSockets", "Redis", "Docker"],
+      link: "#",
+    },
     {
       title: "QR Payments & Fintech Integration Platform",
       impact:
@@ -238,15 +261,6 @@ export const portfolioData = {
       description:
         "Developed full stack systems for subscriptions, engagement, and internal tools with efficient API design, database optimization, and seamless third-party integrations.",
       stack: ["Django", "React.js", "Node.js", "PostgreSQL", "Azure"],
-      link: "#",
-    },
-    {
-      title: "Labor Exchange Platform",
-      impact:
-        "Enabled efficient workforce allocation across companies, improving resource utilization through structured availability and rate-based matching.",
-      description:
-        "Designed and built a full stack platform for managing labor availability, requests, and allocation workflows using scalable backend APIs and real-time updates.",
-      stack: ["Django", "React", "PostgreSQL"],
       link: "#",
     },
   ]
